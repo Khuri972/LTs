@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GrayWhite"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/seller_load_more"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/gray"
+        android:gravity="center"
+        android:text="Load more...."
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/seller_load_more"
+        android:layout_toRightOf="@+id/seller_load_more"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@android:color/transparent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="@color/white"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:paddingTop="8dp">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/company_img"
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="@dimen/_80sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:src="@drawable/splash_logo" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/list_inquiry_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_5sdp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/company_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:text="sd"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/company_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/company_mobile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/company_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp">
+
+                                <RatingBar
+                                    android:id="@+id/review_rat"
+                                    style="?android:attr/ratingBarStyleSmall"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:backgroundTint="@color/yellow"
+                                    android:numStars="5"
+                                    android:progressTint="@color/yellow"
+                                    android:rating="4"
+                                    android:theme="@style/RatingBar" />
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/gray" />
+                </LinearLayout>
+
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/comapany_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/white"
+                    app:layout_collapseMode="pin"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@color/black"
+                    app:tabIndicatorHeight="5dp"
+                    app:tabMaxWidth="0dp"
+                    app:tabMode="fixed"
+                    app:tabSelectedTextColor="@color/black"
+                    app:tabTextColor="@color/gray" />
+
+
+            </android.support.design.widget.CoordinatorLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</FrameLayout>

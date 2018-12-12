@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">LTSONLINE</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="runtime_permissions_txt">Please enable ALL permissions from app settings.</string>
+
+    <string name="facebook_app_id">274627893193274</string>
+    <string name="loginType_facebook">1</string>
+    <string name="loginType_google">2</string>
+    <string name="loginType_normal">0</string>
+
+
+    <string name="currency">₹</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="sign_up_name">Your Name</string>
+    <string name="sign_up_email">Email</string>
+    <string name="sign_up_password">Password</string>
+    <string name="sign_up_phone">Mobile Number</string>
+    <string name="sign_up_account">Already have an Account ? Sign In</string>
+
+    <string name="login_forgot">Forgot Password ?</string>
+    <string name="login_signup">Don`t have an Account ? Sign Up </string>
+    <string name="login">Login In </string>
+
+    <string name="err_msg_name">Enter your name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_password">Enter password</string>
+    <string name="err_msg_phone">Enter mobile number</string>
+    <string name="err_msg_address">Enter address</string>
+    <string name="err_msg_locality">Enter locality</string>
+    <string name="err_msg_city">Enter city</string>
+    <string name="err_msg_state">Enter state</string>
+    <string name="err_msg_zip">Enter the pin number</string>
+    <string name="err_msg_otp">Enter the otp number</string>
+    <string name="err_msg_old_password">Enter old password</string>
+    <string name="err_msg__new_password">Enter new password</string>
+    <string name="err_msg_con_password">Password must be match</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="bag_total">Bag Total</string>
+    <string name="big_discount">Big Discount</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="coupon_discount">Coupon Discount</string>
+    <string name="delivery">Delivery</string>
+    <string name="total_payabale">Total Payable</string>
+    <string name="walllet">Wallet Paid Amount</string>
+    <string name="Place_order">Place Order</string>
+
+    <string name="navigation_drawer_child_title_3_1">MY ACCOUNT</string>
+    <string name="navigation_drawer_child_title_3_2">MY ORDERS</string>
+    <string name="navigation_drawer_child_title_3_3">RATE APP</string>
+
+
+    <string name="Price">Rs. 1,599</string>
+    <string name="discountPrice">Rs. 1,599</string>
+    <string name="sort_by">SORT BY</string>
+    <string name="refine">REFINE</string>
+
+    <!-- bottom camera pick -->
+    <string name="camera_permission_confirmation">This app demonstrates the usage of CameraView. In order to do that, it needs permission to access camera.</string>
+    <string name="camera_permission_not_granted">Camera app cannot do anything without camera permission.</string>
+    <string name="picture_taken">Picture taken</string>
+    <string name="aspect_ratio">Aspect ratio</string>
+    <string name="switch_flash">Switch flash</string>
+    <string name="switch_camera">Switch camera</string>
+    <string name="flash_auto">Flash auto</string>
+    <string name="flash_off">Flash off</string>
+    <string name="flash_on">Flash on</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_select">No Select</string>
+    <!-- end -->
+
+</resources>

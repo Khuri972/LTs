@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        activeColor="#FCAF45"
+        icon="@drawable/ic_search_black_36dp"
+        id="@+id/tab_search"
+        inActiveColor="#fff" />
+    <tab
+        activeColor="#FCAF45"
+        icon="@drawable/ic_question_answer_black_36dp"
+        id="@+id/tab_chat"
+        inActiveColor="#fff" />
+    <tab
+        activeColor="#FCAF45"
+        icon="@drawable/ic_camera_black_36dp"
+        id="@+id/tab_camera"
+        inActiveColor="#fff" />
+
+    <tab
+        activeColor="#FCAF45"
+        icon="@drawable/ic_dashboard_black_36dp"
+        id="@+id/tab_home"
+        inActiveColor="#fff" />
+    <tab
+        activeColor="#FCAF45"
+        icon="@drawable/ic_user_profile_36dp"
+        id="@+id/tab_profile"
+        inActiveColor="#fff" />
+</tabs>

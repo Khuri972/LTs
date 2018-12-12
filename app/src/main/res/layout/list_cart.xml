@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="11dp"
+        android:paddingTop="8dp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:id="@+id/list_cart_linear"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.ltsonline.custom.ScaleImageView
+                    android:id="@+id/list_cart_pro_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/defult_product" />
+
+                <TextView
+                    android:id="@+id/list_cart_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="8dp"
+                    android:singleLine="true"
+                    android:text="@string/navigation_drawer_child_title_3_1"
+                    android:textColor="@color/navigationDrawer"
+                    android:textSize="@dimen/normal_font" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/list_cart_sell_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/normal_margin"
+                        android:text="@string/Price"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/list_cart_max_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="right"
+                        android:paddingRight="@dimen/normal_margin"
+                        android:text="@string/discountPrice"
+                        android:textColor="@color/gray"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/list_cart_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:src="@drawable/ic_remove_cart_item_24dp" />
+</FrameLayout>

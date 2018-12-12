@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                card_view:cardCornerRadius="@dimen/card_elevation"
+                card_view:cardElevation="@dimen/card_corner_radius"
+                card_view:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dp"
+                            android:text="Address"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:paddingLeft="5dp"
+                        android:text="401,Royal Hights, Opp Casa Copper,\nSatya Sai Road,B/H Atmiya College,\nKalawad Road,\nRajkot-5, Gujarat, India."
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                card_view:cardCornerRadius="@dimen/card_elevation"
+                card_view:cardElevation="@dimen/card_corner_radius"
+                card_view:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/abount_us"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="About Us"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:paddingLeft="5dp"
+                        android:text="Lorem ipsum dolor sit amet, consectetur \nadipiscing elit, sed do eiusmod tempor \nincididunt ut labore et dolore magna aliqua."
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                card_view:cardCornerRadius="@dimen/card_elevation"
+                card_view:cardElevation="@dimen/card_corner_radius"
+                card_view:contentPadding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/contact_us"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dp"
+                        android:text="Contact Us"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:gravity="center_vertical"
+                        android:text="Mobile : 9898989898"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:gravity="center_vertical"
+                        android:text="Mobile : 9797979797"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:gravity="center_vertical"
+                        android:text="Email : ltsonline@gmail.com"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                card_view:cardCornerRadius="@dimen/card_elevation"
+                card_view:cardElevation="@dimen/card_corner_radius">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/map_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="Map"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <fragment
+                        android:id="@+id/map"
+                        class="com.ltsonline.custom.WorkaroundMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_200sdp"
+                        map:liteMode="true" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
+

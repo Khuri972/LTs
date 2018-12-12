@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttion_background"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Cart is empty"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_font"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/cart_nested"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cart_total_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Total : Rs.0"
+                android:textColor="@color/textMain"
+                android:textSize="@dimen/large_font" />
+            <!-- todo part2 -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/large_margin"
+                android:visibility="visible"
+                card_view:cardCornerRadius="1dp"
+                card_view:cardElevation="1dp"
+                card_view:contentPadding="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/wellat" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:text="Wallet" />
+
+                        <TextView
+                            android:id="@+id/order_summary_wallet_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="No amount" />
+
+                        <CheckBox
+                            android:id="@+id/order_summary_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/normal_margin" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/navigationDrawer_divider" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/oninepayment" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:text="Online Payment" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/normal_margin" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/navigationDrawer_divider" />
+
+                    <LinearLayout
+                        android:id="@+id/order_summary_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/cod" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:text="Cash On Delivery" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/normal_margin" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <!-- todo part3 -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/large_margin"
+                android:visibility="visible"
+                card_view:cardCornerRadius="1dp"
+                card_view:cardElevation="1dp"
+                card_view:contentPadding="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:text="@string/bag_total"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/normal_font" />
+
+                        <TextView
+                            android:id="@+id/cart_bag_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:text="Rs. 560"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/normal_font" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/navigationDrawer_divider" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:text="@string/big_discount"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/normal_font" />
+
+                        <TextView
+                            android:id="@+id/cart_big_discount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:text="Rs. 560"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/normal_font" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/navigationDrawer_divider"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:text="@string/sub_total"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/normal_font" />
+
+                        <TextView
+                            android:id="@+id/cart_sub_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:text="Rs. 560"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/normal_font" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/navigationDrawer_divider"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:text="@string/coupon_discount"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/normal_font" />
+
+                        <TextView
+                            android:id="@+id/cart_copun_discount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:text="Rs. 560"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/normal_font" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/navigationDrawer_divider" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/cart_deliver_option"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:text="Delivery"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/normal_font" />
+
+                        <TextView
+                            android:id="@+id/cart_delivery"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:text="Rs.100"
+                            android:textColor="@color/navigationDrawer"
+                            android:textSize="@dimen/normal_font"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/cart_delivery_charge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:text="Check delivery charge"
+                            android:textColor="@color/navigationDrawer"
+                            android:textSize="@dimen/normal_font"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/order_summary_wallet_pay_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/navigationDrawer_divider" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:gravity="center_vertical">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="1"
+                                android:text="@string/walllet"
+                                android:textColor="@color/gray"
+                                android:textSize="@dimen/normal_font" />
+
+                            <TextView
+                                android:id="@+id/cart_total_pay_wallet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:text="Rs. 560"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/normal_font" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/navigationDrawer_divider" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:text="@string/total_payabale"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/normal_font" />
+
+                        <TextView
+                            android:id="@+id/cart_total_payabale"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:text="Rs. 560"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/normal_font" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- todo part address -->
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/large_margin"
+                android:visibility="visible"
+                card_view:cardCornerRadius="1dp"
+                card_view:cardElevation="1dp"
+                card_view:contentPadding="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:text="SHIP TO"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/normal_font" />
+
+                        <ImageView
+                            android:id="@+id/order_summery_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/edit" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/cart_full_address"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:text="fsf"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/normal_font" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- todo add cart buttion -->
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                card_view:cardBackgroundColor="@color/navigationDrawer"
+                card_view:cardCornerRadius="15dp"
+                card_view:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/cart_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="@string/Place_order"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

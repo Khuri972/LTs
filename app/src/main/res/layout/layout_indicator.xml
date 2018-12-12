@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.relex.circleindicator.CircleIndicator xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/indicator"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="10dp"
+    app:ci_animator="@animator/indicator_no_animator"
+    app:ci_drawable="@drawable/white_radius"
+    app:ci_drawable_unselected="@drawable/black_radius"
+    app:ci_height="8dp"
+    app:ci_width="8dp">
+
+
+</me.relex.circleindicator.CircleIndicator>

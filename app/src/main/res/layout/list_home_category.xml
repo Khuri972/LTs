@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        card_view:cardCornerRadius="@dimen/card_elevation"
+        card_view:cardElevation="@dimen/card_corner_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/list_home_category_img"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/tv" />
+
+            <TextView
+                android:id="@+id/list_home_category_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="WOMEN"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

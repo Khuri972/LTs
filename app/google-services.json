@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "456553898910",
+    "firebase_url": "https://ltsonline-82d63.firebaseio.com",
+    "project_id": "ltsonline-82d63",
+    "storage_bucket": "ltsonline-82d63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456553898910:android:7611355b52dc1750",
+        "android_client_info": {
+          "package_name": "com.ltsonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456553898910-gk63h443j47jhh62rrq0vlt766naol1h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ltsonline",
+            "certificate_hash": "9de8c73144dae3fafdc6d6ce3c72b65e50880e84"
+          }
+        },
+        {
+          "client_id": "456553898910-f168vivthnooahrmk958k5sd88k11sm0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKeVPqtNmT9GZ5BfczjWFan5RFytudark"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456553898910-f168vivthnooahrmk958k5sd88k11sm0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

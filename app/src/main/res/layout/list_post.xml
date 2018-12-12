@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="2dp"
+        android:visibility="visible"
+        card_view:cardCornerRadius="@dimen/card_elevation"
+        card_view:cardElevation="@dimen/card_corner_radius"
+        card_view:contentPadding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/company_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:src="@drawable/splash_logo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list_inquiry_main"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/post_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Heel"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/post_desc"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="It is a well-known fact that the best way to look attractive and to raise a woman's glamour quotient"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/post_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="₹3000.00"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+

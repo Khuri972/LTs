@@ -1,0 +1,28 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GrayWhite">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/order_history_recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/_64sdp"></android.support.v7.widget.RecyclerView>
+
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:visibility="visible"
+        app:bb_behavior="iconsOnly"
+        app:bb_inActiveTabColor="@color/black"
+        app:bb_showShadow="false"
+        app:bb_tabXmlResource="@xml/bottombar_tabs" />
+
+</android.support.design.widget.CoordinatorLayout>
